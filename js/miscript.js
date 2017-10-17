@@ -1,5 +1,5 @@
 function esconder() {
-   document.getElementById("matricula").style.display = "none";
+   document.getElementById("bloqueR").style.display = "none";
 }
 
 function mostrar() {
