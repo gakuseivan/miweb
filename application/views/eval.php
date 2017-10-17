@@ -2,7 +2,10 @@
 <html>
 <head>
 	<title>Matricula</title>
-    <script type="text/javascript" src="miscript.js">
+
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>css/estilos.css">
+
+    <script type="text/javascript" src="<?php echo base_url();?>js/miscript.js">
         
     </script>
 
@@ -18,6 +21,7 @@
         <button type="button" onclick="validar()" id="boton7">Validar</button><p>
         <button type="button" onclick="disable()" id="boton8">Deshabilitar</button><p>
         <button type="button" onclick="crear()" id="boton9">crear</button><p>
+        <div id="div"></div>
         </div>
 	<form >
 		<h1>Matricula</h1>
