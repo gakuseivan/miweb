@@ -10,10 +10,10 @@ class form_model extends CI_Model
 	function __construct()
 	{
 		parent::__construct();
-		$this->load->database();
+		//$this->load->database();
 	}
 
-	function guardar($data)
+	/*function guardar($data)
 	{
 		$query = $this->db->insert('usuarios', array('nombre'=>$data['nombre'], 'apellido'=>$data['apellido']));
 
@@ -25,7 +25,7 @@ class form_model extends CI_Model
 		{
 			echo "Algo salio mal";
 		}
-	}
+	}*/
 }
 
  ?>

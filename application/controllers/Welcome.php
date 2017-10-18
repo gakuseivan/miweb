@@ -22,26 +22,25 @@ class Welcome extends CI_Controller {
 	function __construct(){
 		parent::__construct();
 		$this->load->helper('form');
-		$this->load->model('form_model');  
+		//$this->load->model('form_model');  
 	}
 
 	public function index()
 	{
 		$this->load->view('eval');
-
 	}
 
-	function validar()
+	/*function validar()
 	{	
-		echo "Hola<br>";
-		//$this->form_validation->set_rules()
-		$name = $this->input->post('name');
+		//echo "Hola<br>";
+
+		/*$name = $this->input->post('name');
 		$lastname = $this->input->post('lastname');
 
-		$data = array('nombre' => $this->input->post('name'),'apellido' => $this->input->post('lastname') );
+		echo "Nombre: ".$name."  Apellido: ".$lastname;*/
 
-		echo "Nombre: ".$name."  Apellido: ".$lastname;
+		//$data = array('nombre' => $this->input->post('name'),'apellido' => $this->input->post('lastname') );
 
-		$this->form_model->guardar($data);
-	}
+		//$this->form_model->guardar($data);
+	//}
 }
