@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Matricula</title>
 
     <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>css/estilos.css">
@@ -15,15 +17,11 @@
         <button type="button" onclick="esconder()" id="boton1">Ejercicio1</button><p>
         <button type="button" onclick="mostrar()" id="boton2">Ejercicio2</button><p>
         <button type="button" onclick="cambiar()" id="boton3">Ejercicio3</button><p>
-        <button type="button" onclick="resaltar()" id="boton4">Ejercicio4</button><p>
-        <button type="button" onclick="color()" id="boton5">Ejercicio5</button><p>
-        <button type="button" onclick="fondo()" id="boton6">Ejercicio6</button><p>
-        <button type="button" onclick="validar()" id="boton7">Validar</button><p>
-        <button type="button" onclick="disable()" id="boton8">Deshabilitar</button><p>
-        <button type="button" onclick="crear()" id="boton9">crear</button><p>
+
         <div id="div"></div>
         </div>
-	<form >
+       <?php echo form_open("Welcome/validar")?>
+
 		<h1>Matricula</h1>
 		<fieldset id="matricula">
 			<legend>Matricula</legend>
@@ -52,9 +50,9 @@
 		<fieldset>
 			<legend>Datos del Alumno</legend>
 				<label id="name">Nombre</label>
-				<input type="text" name="" id="nombre">
+				<input type="text" name="name" id="nombre">
 				<label>Apellido</label>
-				<input type="text" name="" id="apellido">
+				<input type="text" name="lastname" id="apellido">
 				<label>Sexo</label>
 				<input type="radio" name=""><label>Masculino</label>
 				<input type="radio" name=""><label>Femenino</label>
@@ -75,7 +73,7 @@
 			<input type="submit" name="submit" id="boton" />
 		</fieldset>
 
-	</form>
+	<?php echo form_close() ?>
 
 </body>
 </html>
